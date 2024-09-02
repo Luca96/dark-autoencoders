@@ -2,7 +2,7 @@
 We use auto-encoders in an anomaly detection setting to search for SUEP (_soft unclustered energy patterns_) and SVJ 
 (_semi-visible jets_) signals in a background of QCD events.
 
-In our [paper](https://arxiv.org/abs/2306.12955) we propose a family of __Conditional Dual Auto-Encoders__ (CoDAEs) models that can learn multiple anomaly detection scores 
+In our journal [paper](https://iopscience.iop.org/article/10.1088/2632-2153/ad652b) we propose a family of __Conditional Dual Auto-Encoders__ (CoDAEs) models that can learn multiple anomaly detection scores 
 from raw images of particle collisions.
 ![codae-arch](src/codae_arch.jpg)
 * There are _two encodes_: one with high capacity ($f_R$) to capture details in its large bottleneck, $Z$, and a smaller 
@@ -40,10 +40,17 @@ Installation with virtual environment (otherwise open in, e.g., Google Colab):
 Please consider citing our paper, if using any of the provided code and approach in your own research or project.
 
 ```bibtex
-@article{anzalone2023triggering,
-  title={Triggering Dark Showers with Conditional Dual Auto-Encoders},
-  author={Anzalone, Luca and Chhibra, Simranjit Singh and Maier, Benedikt and Chernyavskaya, Nadezda and Pierini, Maurizio},
-  journal={arXiv preprint arXiv:2306.12955},
-  year={2023}
+@article{anzalone2024triggering,
+  doi = {10.1088/2632-2153/ad652b},
+  url = {https://dx.doi.org/10.1088/2632-2153/ad652b},
+  year = {2024},
+  month = {sep},
+  publisher = {IOP Publishing},
+  volume = {5},
+  number = {3},
+  pages = {035064},
+  author = {Luca Anzalone and Simranjit Singh Chhibra and Benedikt Maier and Nadezda Chernyavskaya and Maurizio Pierini},
+  title = {Triggering dark showers with conditional dual auto-encoders},
+  journal = {Machine Learning: Science and Technology},
 }
 ```
